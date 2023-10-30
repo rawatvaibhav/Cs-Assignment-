@@ -1,0 +1,61 @@
+1	#include <iostream>
+ 
+2	using namespace std;
+ 
+3	
+ 
+4	class add {
+ 
+5	private:
+ 
+6	    int value;
+ 
+7	
+ 
+8	public:
+ 
+9	    add(int val)
+ 
+10	    {
+ 
+11	        value=val;
+ 
+12	    }
+ 
+13	
+ 
+14	    // Overload the + operator
+ 
+15	    friend add operator+(add b, add a);
+ 
+16	};
+ 
+17	
+ 
+18	add operator+(add b, add a) {
+ 
+19	        int sm = b.value + a.value;
+ 
+20	        cout<<"Addition : "<<sm<<endl;
+ 
+21	    }
+ 
+22	
+ 
+23	int main() {
+ 
+24	    add num1(5);
+ 
+25	    add num2(10);
+ 
+26	
+ 
+27	    add result = num1 + num2;
+ 
+28	
+ 
+29	    return 0;
+ 
+30	}
+
+ 
