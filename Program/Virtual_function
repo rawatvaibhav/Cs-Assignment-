@@ -1,0 +1,90 @@
+include <iostream>
+ 
+2	using namespace std;
+ 
+3	
+ 
+4	// Base class
+ 
+5	class Shape {
+ 
+6	public:
+ 
+7	    virtual void draw() {
+ 
+8	        cout << "Drawing a shape." <<endl;
+ 
+9	    }
+ 
+10	};
+ 
+11	
+ 
+12	// Derived class 1
+ 
+13	class Circle : public Shape {
+ 
+14	public:
+ 
+15	    void draw() override{
+ 
+16	        cout << "Drawing a circle." <<endl;
+ 
+17	    }
+ 
+18	};
+ 
+19	
+ 
+20	// Derived class 2
+ 
+21	class Square : public Shape {
+ 
+22	public:
+ 
+23	    void draw() override{
+ 
+24	        cout << "Drawing a square." <<endl;
+ 
+25	    }
+ 
+26	};
+ 
+27	
+ 
+28	int main() {
+ 
+29	    // Create objects of base and derived classes
+ 
+30	    Shape shape;
+ 
+31	    Circle circle;
+ 
+32	    Square square;
+ 
+33	
+ 
+34	    // Create pointers to base class objects
+ 
+35	    Shape* shapePtr1 = &shape;
+ 
+36	    Shape* shapePtr2 = &circle;
+ 
+37	    Shape* shapePtr3 = &square;
+ 
+38	
+ 
+39	    // Call the draw() function through base class pointers
+ 
+40	    shapePtr1->draw();  // Output: Drawing a shape.
+ 
+41	    shapePtr2->draw();  // Output: Drawing a circle.
+ 
+42	    shapePtr3->draw();  // Output: Drawing a square.
+ 
+43	
+ 
+44	    return 0;
+ 
+45	}
+
