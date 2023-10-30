@@ -1,0 +1,50 @@
+include<iostream>
+ 
+2	using namespace std;
+ 
+3	
+ 
+4	// Function to add two integers
+ 
+5	int add(int a, int b) {
+ 
+6	    return a + b;
+ 
+7	}
+ 
+8	
+ 
+9	// Function to add two doubles
+ 
+10	double add(double a, double b) {
+ 
+11	    return a + b;
+ 
+12	}
+ 
+13	
+ 
+14	int main() {
+ 
+15	    // Calls int add(int a, int b)
+ 
+16	    int addition_int_values = add(5, 3);  
+ 
+17	
+ 
+18	    // Calls double add(double a, double b)      
+ 
+19	    double addition_double_values = add(2.5, 3.7); 
+ 
+20	
+ 
+21	    cout << "Addition of int values: " << addition_int_values << endl;
+ 
+22	    cout << "Addition of double values: " << addition_double_values << endl;
+ 
+23	
+ 
+24	    return 0;
+ 
+25	}
+
