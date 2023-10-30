@@ -1,0 +1,40 @@
+	#include<iostream>
+ 
+2	using namespace std;
+ 
+3	
+ 
+4	class temp{
+ 
+5	    public:
+ 
+6	        template <class T1>
+ 
+7	        
+ 
+8	        char fun(T1 val)
+ 
+9	        {
+ 
+10	            cout<<"Result : "<<val<<endl;
+ 
+11	        }
+ 
+12	};
+ 
+13	int main()
+ 
+14	{
+ 
+15	    temp t;
+ 
+16	    t.fun("C++");   //for string
+ 
+17	    t.fun('C');     // for character
+ 
+18	    t.fun(56);      // for integer
+ 
+19	    t.fun(9.8);    // for float
+ 
+20	    
+ 
